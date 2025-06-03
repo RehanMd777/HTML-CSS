@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper"></div>
+    <div class="container"></div>
+    <h1>Calculator</h1>
+    <div class="row"></div>
+    <input type="text"  name="result"  class="result"  id="result"  value=""  placeholder="Result"  readonly/>
+      <div class="row">
+    <input type="button" value="+"  onclick="SetscreenValue('+')">
+    <input type="button" value="1" onclick="SetscreenValue('1')">
+    <input type="button" value="2" onclick="SetscreenValue('2')">
+    <input type="button" value="3" onclick="SetscreenValue('3')">
+    <input type="button" value="-" onclick="SetscreenValue('-')">
+      </div>
+      <div class="row">
+        <input type="button" value="4" onclick="SetscreenValue('4')">
+        <input type="button" value="5" onclick="SetscreenValue('5')">
+        <input type="button" value="6" onclick="SetscreenValue('6')">
+        <input type="button" value="x" onclick="SetscreenValue('*')">
+
+      </div>
+      <div class="row">
+        
+        <input type="button" value="7" onclick="SetscreenValue('7')">
+        <input type="button" value="8" onclick="SetscreenValue('8')">
+        <input type="button" value="9" onclick="SetscreenValue('9')">
+        <input type="button" value="/" onclick="SetscreenValue('/')">
+      </div>
+      <div class="row">
+        <input type="button" value="%" onclick="SetscreenValue('%')">
+        <input type="button" value="0" onclick="SetscreenValue('0')">
+        <input type="button" value="." onclick="SetscreenValue('.')">
+        <input type="button"  value="=" onclick="CalculateResult()">
+      </div>
+      <div class="row">
+        <input type="button" value="CLEAR" onclick="clearScreen" id="clear" class="clear_button">
+
+
+      </div>
+    </div>
+
+      </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
