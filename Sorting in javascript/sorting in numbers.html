@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="result"> Sorting in Numbers</h1>
+    <button onclick="ascending()">Ascending</button>
+    <button onclick="descending()">Descending</button>
+    <script>
+        var points=[5, 10, 15, 20, 25, 30];
+        document.getElementById("result").innerHTML= points;
+        function ascending() {
+            points.sort(function (a,b){return a-b});
+            document.getElementById("result").innerHTML = points;
+        }
+        function descending() {
+            points.sort(function (a, b) { return b - a });
+            document.getElementById("result").innerHTML = points;
+        }
+        
+
+    </script>
+</body>
+</html>
